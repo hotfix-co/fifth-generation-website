@@ -1,9 +1,13 @@
-baseURL = "http://example.org/"
-languageCode = "de-de"
+baseURL = "http://localhost:1313/"  # Change baseURL to local address
+languageCode = "de-de"              # Default language is German
 title = "Fifth Generation Construction"
 theme = "ananke"
-defaultContentLanguage = "de"
+defaultContentLanguage = "en"      # Set English as the default content language
 enableRobotsTXT = true
+
+[params]
+  mainSections = ["about", "projects"]
+  showLanguageSwitcher = true
 
 [languages]
   [languages.de]
@@ -15,3 +19,26 @@ enableRobotsTXT = true
   [languages.en]
     languageName = "English"
     weight = 3
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[[menu.main]]
+  identifier = "about"
+  name = "About Us"
+  url = "/about/"
+  weight = 1
+
+[[menu.main]]
+  identifier = "projects"
+  name = "Projects"
+  url = "/projects/"
+  weight = 2
+
+[[menu.main]]
+  identifier = "contact"
+  name = "Contact"
+  url = "/contact/"
+  weight = 3
