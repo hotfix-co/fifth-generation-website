@@ -1,0 +1,17 @@
+baseURL = "http://example.org/"
+languageCode = "de-de"
+title = "Fifth Generation Construction"
+theme = "ananke"
+defaultContentLanguage = "de"
+enableRobotsTXT = true
+
+[languages]
+  [languages.de]
+    languageName = "Deutsch"
+    weight = 1
+  [languages.hr]
+    languageName = "Hrvatski"
+    weight = 2
+  [languages.en]
+    languageName = "English"
+    weight = 3
